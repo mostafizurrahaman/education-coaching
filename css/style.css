@@ -265,6 +265,7 @@ h1{
    opacity: 0.8;
 }
 #course_sec .box img{
+   width: 100%;
    border-radius:10px ;
    -webkit-border-radius:10px ;
    -moz-border-radius:10px ;
@@ -341,5 +342,13 @@ h1{
 width: 100%;
 
 }
-.news_feature  .addition_img{ width: 6rem; height: 6rem; position: absolute; left: 0; top: 50%; transform:translate(-50%,-50%) ; -webkit-transform:translate(-50%,-50%) ; -moz-transform:translate(-50%,-50%) ; -ms-transform:translate(-50%,-50%) ; -o-transform:translate(-50%,-50%) ;
+.news_feature  .addition_img{ width: 6rem; height: 6rem; position: absolute; left: 0; top: 50%; transform:translate(-50%,-50%) ; -webkit-transform:translate(-50%,-50%) ; -moz-transform:translate(-50%,-50%) ; -ms-transform:translate(-50%,-50%) ; -o-transform:translate(-50%,-50%) ; transition:0.5s all ease; -webkit-transition:0.5s all ease; -moz-transition:0.5s all ease; -ms-transition:0.5s all ease; -o-transition:0.5s all ease;
+}
+.news_feature:hover .addition_img{
+   transform:translate(-50%,-50%)  rotate(360deg);
+   -webkit-transform:translate(-50%,-50%)  rotate(360deg);
+   -moz-transform:translate(-50%,-50%)  rotate(360deg);
+   -ms-transform:translate(-50%,-50%)  rotate(360deg);
+   -o-transform:translate(-50%,-50%)  rotate(360deg);
+   left: 0;
 }
